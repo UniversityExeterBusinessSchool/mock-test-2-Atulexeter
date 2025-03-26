@@ -88,6 +88,69 @@ print("Positions of 'good' and 'improved':", positions_list)
 # 3. Net Promoter Score (NPS): Calculate as (Promoters - Detractors) / Total Respondents * 100.
 # 4. Return on Investment (ROI): Calculate as (Net Gain from Investment / Investment Cost) * 100.
 
+# answer
+# Function to calculate Net Profit Margin
+
+
+def net_profit_margin(profit, revenue):
+    return (profit / revenue) * 100 if revenue != 0 else 0
+
+# Function to calculate Customer Acquisition Cost (CAC)
+
+
+def customer_acquisition_cost(marketing_cost, customers):
+    return marketing_cost / customers if customers != 0 else 0
+
+# Function to calculate Net Promoter Score (NPS)
+
+
+def net_promoter_score(promoters, detractors, total):
+    return ((promoters - detractors) / total) * 100 if total != 0 else 0
+
+# Function to calculate Return on Investment (ROI)
+
+
+def return_on_investment(gain, investment):
+    return (gain / investment) * 100 if investment != 0 else 0
+
+
+# Using student ID digits: 750011108
+profit = 7500
+revenue = 11108
+marketing_cost = 1108
+customers = 75
+promoters = 50
+detractors = 11
+total_respondents = 108
+gain = 7500
+investment = 1108
+
+# Print results
+print("Net Profit Margin:", net_profit_margin(profit, revenue), "%")
+print("Customer Acquisition Cost: £",
+      customer_acquisition_cost(marketing_cost, customers))
+print("Net Promoter Score:", net_promoter_score(
+    promoters, detractors, total_respondents))
+print("Return on Investment:", return_on_investment(gain, investment), "%")
+
+# Net Profit Margin: 67.5 %
+# Customer Acquisition Cost: £ 14.77
+# Net Promoter Score: 36.11
+# Return on Investment: 676.7 %
+
+# 7500 → Net Profit
+
+# 11108 → Revenue
+
+# 1108 → Marketing Cost & Investment Cost
+
+# 75 → New Customers
+
+# 50 → Promoters
+
+# 11 → Detractors
+
+# 108 → Total Respondents
 #######################################################################################################################################################
 
 # Question 4 - Data Analysis with Pandas
